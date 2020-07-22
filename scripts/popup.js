@@ -1,8 +1,5 @@
-document.getElementById("invade").addEventListener("click", function() {
-    chrome.runtime.sendMessage("runContentScript", 
-    function(response) {
+document.getElementById('invade').addEventListener('click', function() {
+    chrome.runtime.sendMessage('invadeBrowser', function() {
         window.close();
-
-     });//callback will be invoked somewhere in the future
-
+    });
 });
