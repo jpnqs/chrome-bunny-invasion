@@ -1,0 +1,47 @@
+{
+    "manifest_version": 2,
+    "name": "Bunny Invasion",
+    "version": "1.0",
+    "options_page": "options.html",
+
+    "description": "Many bunnys that invade your browser!",
+    "background": {
+        "scripts": ["scripts/background.js"],
+        "persistent": false
+    },
+    "permissions": [
+        "*://*/*",
+        "activeTab",
+        "declarativeContent",
+        "storage"
+    ],
+
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Bunny Invasion",
+        "default_icon": {               
+            "16": "images/icon.png", 
+            "24": "images/icon.png", 
+            "32": "images/icon.png"  
+        }
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "scripts/content.js"
+            ]
+        }
+    ],
+
+    "icons": {
+        "16": "images/icon.png",
+        "32": "images/icon.png",
+        "48": "images/icon.png",
+        "128": "images/icon.png"
+    }
+
+}
