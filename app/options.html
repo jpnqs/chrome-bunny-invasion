@@ -3,12 +3,47 @@
   <head>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <style>
-      html {
-        font-family: "Comic Neue";
+      html, body, h1, p, span {
+        font-family: "Comic Neue" !important;
+      }
+      #icon {
+        height: 3rem;
+        float:left;
+      }
+      h1 {
+        padding-top: 0.5rem;
+        margin-left: 4rem;
+        font-size: 24pt;
+      }
+      .heading {
+        margin-left: 1rem;
+      }
+      span {
+        font-size: 16pt;
+      }
+      p {
+        margin-left: 3rem;
+
       }
     </style>
   </head>
   <body>
-    <h1>Welcome to Bunny Invasion!</h1>
+    <div class="heading">
+      <img id="icon" src="images/icon.png">
+      <h1>Bunny Invasion</h1>
+    </div>
+    <div>
+      <br>
+      <p>
+        <span><strong>Version:</strong> 1.0</span>
+      </p>
+      <p>
+        <span><strong>Description:</strong> A whole cute bunny army will invade your browser website!</span>
+      </p>
+      <br>
+      <p>
+        <span>Thank you for downloading my extension :)</span>
+      </p>
+    </div>
   </body>
 </html>

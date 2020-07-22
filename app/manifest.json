@@ -4,7 +4,7 @@
     "version": "1.0",
     "options_page": "options.html",
 
-    "description": "Many bunnys that invade your browser!",
+    "description": "A whole cute bunny army will invade your browser website!",
 
     "permissions": [
         "*://*/*",
