@@ -10,10 +10,8 @@
         "persistent": false
     },
     "permissions": [
-        "*://*/*",
         "activeTab",
-        "declarativeContent",
-        "storage"
+        "declarativeContent"
     ],
 
     "browser_action": {
